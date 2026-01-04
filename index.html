@@ -1,0 +1,890 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MIMOSA — AI for Knee Osteoarthritis</title>
+  <meta name="description" content="MIMOSA project website: About, Partners, Mission, Vision, AI System, Team, Publications, Contact." />
+
+  <style>
+    :root{
+      --bg0:#070a12;
+      --bg1:#0a0f1f;
+      --bg2:#0b1430;
+
+      --panel: rgba(255,255,255,.05);
+      --card: rgba(255,255,255,.045);
+      --border: rgba(255,255,255,.10);
+
+      --text:#eaf0ff;
+      --muted:#a4b4d6;
+
+      --brand:#7aa7ff;
+      --brand2:#8cffd6;
+      --brand3:#ffcf7a;
+
+      --shadow: 0 22px 70px rgba(0,0,0,.45);
+      --r: 18px;
+      --r2: 24px;
+
+      --link:#cfe0ff;
+      --max: 1160px;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      color:var(--text);
+      line-height:1.55;
+
+      background:
+        radial-gradient(1200px 850px at 14% 10%, rgba(122,167,255,.22), transparent 62%),
+        radial-gradient(950px 780px at 84% 24%, rgba(140,255,214,.14), transparent 60%),
+        radial-gradient(900px 900px at 70% 88%, rgba(255,207,122,.08), transparent 55%),
+        linear-gradient(180deg, var(--bg0), var(--bg1) 45%, var(--bg2));
+      background-attachment: fixed;
+    }
+
+    a{color:var(--link); text-decoration:none}
+    a:hover{opacity:.92}
+    .container{width:min(var(--max), calc(100% - 44px)); margin:0 auto}
+
+    header{
+      position:sticky; top:0; z-index:50;
+      backdrop-filter: blur(12px);
+      background: rgba(6, 9, 16, .58);
+      border-bottom:1px solid rgba(255,255,255,.08);
+    }
+    .topbar{
+      display:flex; align-items:center; justify-content:space-between;
+      gap:14px; padding:14px 0;
+    }
+    .brand{
+      display:flex; align-items:center; gap:12px;
+      font-weight:850; letter-spacing:.2px; color:var(--text);
+    }
+    .logo{
+      width:14px; height:14px; border-radius:6px;
+      background: linear-gradient(135deg, var(--brand), var(--brand2));
+      box-shadow: 0 0 0 7px rgba(255,255,255,.03);
+    }
+    .tag{
+      font-size:12px; padding:6px 10px; border-radius:999px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.04);
+      color:var(--muted);
+      font-weight:650;
+    }
+
+    nav{display:flex; flex-wrap:wrap; gap:8px; justify-content:flex-end}
+    nav a{
+      color:rgba(215,225,245,.78);
+      font-size:13.5px;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid transparent;
+      transition: .14s ease;
+    }
+    nav a:hover{
+      color:var(--text);
+      background: rgba(255,255,255,.06);
+      border-color: rgba(255,255,255,.08);
+      transform: translateY(-1px);
+    }
+    nav a.active{
+      color:var(--text);
+      background: rgba(255,255,255,.07);
+      border-color: rgba(255,255,255,.12);
+    }
+
+    section{padding:28px 0}
+    .anchor{scroll-margin-top: 84px;}
+
+    .hero{padding:62px 0 18px}
+    .heroGrid{
+      display:grid;
+      grid-template-columns: 1.25fr .75fr;
+      gap:16px;
+      align-items:stretch;
+    }
+    @media (max-width: 980px){ .heroGrid{grid-template-columns:1fr} }
+
+    .panel{
+      border:1px solid rgba(255,255,255,.11);
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      border-radius: var(--r2);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .heroMain{padding:26px; position:relative}
+    .heroMain:before{
+      content:"";
+      position:absolute; inset:-2px;
+      background:
+        radial-gradient(700px 360px at 22% 18%, rgba(122,167,255,.18), transparent 62%),
+        radial-gradient(720px 420px at 78% 70%, rgba(140,255,214,.12), transparent 62%),
+        radial-gradient(650px 380px at 55% 45%, rgba(255,207,122,.06), transparent 62%);
+      pointer-events:none;
+    }
+    .heroMain > *{position:relative}
+
+    h1{margin:0 0 10px; font-size:44px; line-height:1.06}
+    @media (max-width:520px){ h1{font-size:34px} }
+    .subtitle{margin:0 0 16px; color:rgba(215,225,245,.78); max-width:72ch}
+
+    .kpis{display:flex; flex-wrap:wrap; gap:10px; margin-top:14px}
+    .kpi{
+      min-width: 190px;
+      padding:10px 12px;
+      border-radius:16px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.035);
+    }
+    .kpi b{display:block; font-size:12.5px; color:rgba(215,225,245,.70); font-weight:750}
+    .kpi span{display:block; margin-top:4px; font-size:14px}
+
+    .sectionTitle{margin:0 0 10px; font-size:22px}
+    .lead{margin:0 0 18px; color:rgba(215,225,245,.74); max-width:88ch}
+
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap:14px;
+    }
+    @media (max-width: 980px){ .grid{grid-template-columns:1fr} }
+
+    .twoCol{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:14px;
+    }
+    @media (max-width: 980px){ .twoCol{grid-template-columns:1fr} }
+
+    .card{
+      padding:16px;
+      border-radius: var(--r2);
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.035);
+      box-shadow: 0 10px 40px rgba(0,0,0,.20);
+    }
+    .card h4{margin:0 0 8px; font-size:16px}
+    .card p{margin:0; color:rgba(215,225,245,.74); font-size:14px}
+    .hr{height:1px; background: rgba(255,255,255,.09); margin:14px 0}
+
+    figure{
+      margin:0;
+      border-radius: var(--r2);
+      overflow:hidden;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.02);
+    }
+    .imgBox{
+      aspect-ratio: 16 / 9;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:12px;
+      color:rgba(215,225,245,.72);
+      background:
+        radial-gradient(800px 320px at 30% 20%, rgba(122,167,255,.14), transparent 60%),
+        radial-gradient(800px 320px at 70% 70%, rgba(140,255,214,.10), transparent 60%),
+        rgba(255,255,255,.03);
+    }
+    .imgBox img{
+      width:100%;
+      height:100%;
+      object-fit:contain;
+      display:block;
+    }
+    figure figcaption{
+      padding:10px 12px;
+      font-size:12.5px;
+      color:rgba(215,225,245,.70);
+      border-top:1px solid rgba(255,255,255,.08);
+      background: rgba(0,0,0,.18);
+    }
+
+    .people{
+      display:grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap:14px;
+    }
+    @media (max-width: 980px){ .people{grid-template-columns:1fr 1fr} }
+    @media (max-width: 520px){ .people{grid-template-columns:1fr} }
+
+    .person{
+      display:flex;
+      gap:12px;
+      align-items:flex-start;
+    }
+    .avatar{
+      width:54px; height:54px;
+      border-radius:16px;
+      border:1px solid rgba(255,255,255,.12);
+      background:
+        linear-gradient(135deg, rgba(122,167,255,.35), rgba(140,255,214,.22)),
+        rgba(255,255,255,.03);
+      flex: 0 0 auto;
+      display:flex; align-items:center; justify-content:center;
+      color:rgba(255,255,255,.85);
+      font-weight:800;
+    }
+    .person b{display:block; font-size:14px}
+    .person span{display:block; color:rgba(215,225,245,.72); font-size:13px; margin-top:2px}
+
+    footer{
+      border-top:1px solid rgba(255,255,255,.08);
+      padding:24px 0 30px;
+      color:rgba(215,225,245,.70);
+      font-size:13px;
+      margin-top:14px;
+      background: rgba(0,0,0,.12);
+    }
+    .foot{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      justify-content:space-between;
+      align-items:flex-start;
+    }
+    .foot a{color:rgba(215,225,245,.70)}
+    .foot a:hover{color:var(--text)}
+    .sep{opacity:.6; padding:0 8px}
+    .mono{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}
+    .small{font-size:12.5px}
+
+    input, textarea{
+      width:100%;
+      border-radius:16px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.03);
+      color:var(--text);
+      padding:12px 12px;
+      outline:none;
+    }
+    textarea{min-height: 120px; resize: vertical}
+    label{display:block; margin:10px 0 6px; color:rgba(215,225,245,.72); font-size:13px}
+    .formRow{display:grid; grid-template-columns:1fr 1fr; gap:12px}
+    @media (max-width: 980px){ .formRow{grid-template-columns:1fr} }
+
+    .divider{
+      height:1px;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,.10), transparent);
+      margin: 10px 0;
+    }
+    /* --- Partner logos (small, same size, responsive) --- */
+.logoStrip{
+  display:grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap:10px;
+  align-items:center;
+  margin-top:12px;
+}
+
+@media (max-width: 980px){
+  .logoStrip{ grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 520px){
+  .logoStrip{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+.logoItem{
+  height:42px;                 /* small + uniform */
+  border-radius:14px;
+  border:1px solid rgba(255,255,255,.10);
+  background: rgba(255,255,255,.03);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:6px 8px;
+  overflow:hidden;
+}
+
+.logoItem img{
+  max-height: 35px;            /* uniform visual size */
+  max-width: 100%;
+  width:auto;
+  height:auto;
+  object-fit: contain;
+  display:block;
+  filter: saturate(1.02) contrast(1.02);
+  opacity:.95;
+}
+
+/* Optional: make logos a bit brighter on hover */
+.logoItem:hover{
+  background: rgba(255,255,255,.05);
+  transform: translateY(-1px);
+  transition: .14s ease;
+}
+/* Publications layout alignment */
+#pubs-root .card{
+  width:100%;
+  box-sizing:border-box;
+}
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container topbar">
+    <a class="brand" href="#home" aria-label="MIMOSA home">
+      <span class="logo" aria-hidden="true"></span>
+      <span>MIMOSA</span>
+      <span class="tag">AI for Knee Osteoarthritis</span>
+    </a>
+
+    <nav id="nav">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#mission">Mission & Vision</a>
+      <a href="#system">AI System</a>
+      <a href="#partners">Partners</a>
+      <a href="#team">Team</a>
+      <a href="#publications">Publications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- HOME -->
+  <div id="home" class="anchor"></div>
+  <section class="hero">
+    <div class="container heroGrid">
+
+      <div class="panel heroMain">
+        <h1>MIMOSA</h1>
+        <p class="subtitle">
+          MIMOSA is an ANR-funded research project dedicated to <b>knee osteoarthritis (gonarthrosis)</b>,
+          a major public health priority. The project develops <b>transparent, trustworthy AI</b> that combines
+          <b>X-ray and MRI</b> to improve <b>severity assessment</b>, <b>early diagnosis</b>, and <b>prediction of progression</b>.
+        </p>
+
+        <div class="kpis">
+          <div class="kpi"><b>Clinical focus</b><span>Severity • Early signs </span></div>
+          <div class="kpi"><b>Imaging</b><span>X-ray + MRI (multimodal)</span></div>
+          <div class="kpi"><b>Goal</b><span>Transparent CADx for gonarthrosis</span></div>
+        </div>
+
+        <div class="divider"></div>
+
+        <figure style="margin-top:14px;">
+          <div class="imgBox">
+            <!-- Replace src with your local path if needed -->
+            <img src="primo.png"
+                 alt="Overview illustration of the MIMOSA AI pipeline for knee osteoarthritis" />
+          </div>
+          <figcaption>Overview illustration of the MIMOSA AI pipeline for knee osteoarthritis (X-ray + MRI).</figcaption>
+        </figure>
+
+        <div class="hr"></div>
+
+      </div>
+
+      <aside class="panel" style="padding:20px;">
+        <h3 style="margin:0 0 10px; font-size:16px;">Why MIMOSA?</h3>
+        <p style="margin:0 0 14px; color:rgba(215,225,245,.74); font-size:14px;">
+          In current practice, knee OA is largely evaluated from X-rays by visual grading of joint space narrowing
+          and osteophytes. This assessment can be <b>inaccurate</b>, <b>insensitive to early changes</b>, and requires
+          experienced observers to be reproducible. MIMOSA addresses this gap with multimodal AI and explainable outputs.
+        </p>
+
+        <div class="hr"></div>
+        
+        <div class="card" style="background: rgba(255,255,255,.03);">
+          <h4>Project facts (ANR)</h4>
+          <p>
+            <b>Reference:</b> ANR-20-CE45-0013 <span class="sep">•</span>
+            <b>Start & duration:</b> January 2021 — 48 months <span class="sep">•</span>
+            <b>ANR funding:</b> 671,460 €
+          </p>
+
+        </div>
+<div class="hr"></div>
+
+<h4 style="margin:0 0 10px; font-size:14px;">Consortium</h4>
+
+<div class="logoStrip" aria-label="MIMOSA partners logos">
+  <div class="logoItem" title="Université d'Orléans">
+    <img src="Universite d orleans.png" alt="Université d'Orléans logo">
+  </div>
+
+  <div class="logoItem" title="I3MTO / IM3">
+    <img src="IM3.png" alt="I3MTO / IM3 logo">
+  </div>
+
+  <div class="logoItem" title="IDP UMR 7013">
+    <img src="logoIDP.png" alt="IDP UMR 7013 logo">
+  </div>
+
+  <div class="logoItem" title="PRIMMO">
+    <img src="primmo.png" alt="PRIMMO logo">
+  </div>
+
+  <div class="logoItem" title="MED-IMAPS / MM">
+    <img src="MMlogo.jpg" alt="MED-IMAPS logo">
+  </div>
+</div>
+
+      </aside>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="anchor">
+    <div class="container">
+      <h2 class="sectionTitle">About</h2>
+      <p class="lead">
+        Knee osteoarthritis (gonarthrosis) is a progressive degenerative disease and a public health priority.
+        Diagnosis and follow-up are commonly based on radiographic inspection of <b>joint space width</b> and <b>osteophytes</b>.
+        However, early structural changes can be subtle, and manual grading may suffer from limited sensitivity and inter-observer variability.
+        MIMOSA develops machine learning methods—leveraging complementary information from <b>X-ray and MRI</b>—to support reliable
+        severity estimation and early-stage detection, while providing transparent outputs suitable for clinical research workflows.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <h4>Clinical motivation</h4>
+          <p>
+            Improve reproducibility and sensitivity of imaging-based assessment, especially for early and subtle disease changes.
+          </p>
+        </div>
+        <div class="card">
+          <h4>Scientific question</h4>
+          <p>
+            How can we predict the onset and progression of knee OA from radiographs, enhanced by multimodal imaging and learning?
+          </p>
+        </div>
+        <div class="card">
+          <h4>Expected outcome</h4>
+          <p>
+            A transparent CADx system that supports automated severity evaluation and structured, interpretable reporting.
+          </p>
+        </div>
+      </div>
+
+      <div class="hr"></div>
+
+
+    </div>
+  </section>
+
+  <!-- MISSION & VISION -->
+  <section id="mission" class="anchor">
+    <div class="container">
+      <h2 class="sectionTitle">Mission & Vision</h2>
+      <p class="lead">
+        MIMOSA aims to deliver clinically meaningful machine learning methods while ensuring transparency, validation,
+        and reproducibility suitable for scientific and medical settings.
+      </p>
+
+      <div class="twoCol">
+        <div class="card">
+          <h4>Mission</h4>
+          <ul class="list" style="margin:10px 0 0; padding-left:18px; color:rgba(215,225,245,.74);">
+            <li>Develop reliable ML methods for knee OA assessment using X-ray and MRI.</li>
+            <li>Improve sensitivity to early changes and reduce observer-related variability.</li>
+            <li>Provide explainable outputs (regions/landmarks) and uncertainty cues.</li>
+            <li>Establish evaluation protocols for reproducibility and external validation.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h4>Vision</h4>
+          <ul class="list" style="margin:10px 0 0; padding-left:18px; color:rgba(215,225,245,.74);">
+            <li>Enable trustworthy AI-assisted workflows for OA research and decision support.</li>
+            <li>Contribute reusable methods, benchmarks, and validated pipelines to the community.</li>
+            <li>Support adoption via documented models and transparent, clinically interpretable reports.</li>
+            <li>Facilitate collaborations between imaging scientists, clinicians, and AI researchers.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI SYSTEM -->
+  <section id="system" class="anchor">
+    <div class="container">
+      <h2 class="sectionTitle">AI System</h2>
+      <p class="lead">
+        The MIMOSA framework combines imaging modalities to create a transparent CADx pipeline.
+        It is designed to support end-to-end analysis—from acquisition and preprocessing to severity estimation,
+        explainability, and clinically oriented reporting.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <h4>Inputs</h4>
+          <p>
+            X-ray and MRI, optionally complemented with clinical metadata. Preprocessing includes harmonization, normalization,
+            quality control, and (when relevant) anatomical localization.
+          </p>
+        </div>
+        <div class="card">
+          <h4>Modeling</h4>
+          <p>
+            Multimodal learning to capture complementary information across modalities, with strategies for robustness
+            (domain shift, device variability) and calibrated confidence estimation.
+          </p>
+        </div>
+        <div class="card">
+          <h4>Outputs</h4>
+          <p>
+            Severity/progression indicators, interpretable evidence (heatmaps/regions/landmarks), and structured reports
+            designed for reproducible clinical research usage.
+          </p>
+        </div>
+      </div>
+
+      <div class="hr"></div>
+
+      <div class="twoCol">
+        <figure>
+          <div class="imgBox" style="aspect-ratio: 4 / 3;">
+            <div style="padding:18px; color:rgba(215,225,245,.72);">
+              <b>Pipeline figure</b><br/>
+              X-ray + MRI → preprocessing → multimodal model → explainability → severity/report<br/>
+              <span class="small">Replace with: &lt;img src="images/pipeline.png" alt="MIMOSA pipeline"&gt;</span>
+            </div>
+          </div>
+          <figcaption>Figure — End-to-end MIMOSA pipeline (placeholder).</figcaption>
+        </figure>
+
+        <figure>
+          <div class="imgBox" style="aspect-ratio: 4 / 3;">
+            <div style="padding:18px; color:rgba(215,225,245,.72);">
+              <b>Explainability & reporting</b><br/>
+              Heatmaps • anatomical cues • uncertainty • structured report<br/>
+              <span class="small">Replace with: &lt;img src="images/explainability.png" alt="Explainability"&gt;</span>
+            </div>
+          </div>
+          <figcaption>Figure — Explainable outputs and reporting (placeholder).</figcaption>
+        </figure>
+      </div>
+
+      <figure style="margin-top:14px;">
+        <div class="imgBox" style="aspect-ratio: 21 / 9;">
+          <div style="padding:18px; color:rgba(215,225,245,.72);">
+            <b>Quantitative snapshot</b><br/>
+            ROC/PR • confusion matrix • calibration • ablations • robustness tests<br/>
+            <span class="small">Replace with: &lt;img src="images/results.png" alt="Quantitative results"&gt;</span>
+          </div>
+        </div>
+        <figcaption>Figure — Quantitative performance and robustness summary (placeholder).</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- PARTNERS -->
+  <section id="partners" class="anchor">
+    <div class="container">
+      <h2 class="sectionTitle">Partners</h2>
+      <p class="lead">
+        MIMOSA brings together complementary expertise in multimodal imaging, mathematical modeling,
+        and medical innovation platforms for validation and translation.
+      </p>
+
+      <div class="grid">
+
+
+
+        <div class="card">
+          <h4>IDP (UMR 7013) — Institut Denis Poisson</h4>
+          <p>
+            Mathematical and computational modeling, contributing to robust learning and evaluation.
+            Multimodal Multi-scale Imaging and Modeling of Bone & Joint Tissue
+          </p>
+        </div>
+        <div class="card">
+          <h4>MED-IMAPS / I3MTO (EA 4708)</h4>
+          <p>Platform Development and System Deployment </p>
+        </div>
+        <div class="card">
+          <h4>PRIMMO — Orléans</h4>
+          <p>
+            Medical innovation and research platform supporting data management, validation, and translation.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section id="team" class="anchor">
+    <div class="container">
+      <h2 class="sectionTitle">Team</h2>
+      <p class="lead">
+        Replace the placeholders below with names, roles, affiliations, and photos (optional).
+        This format works well for consortium websites and ANR dissemination pages.
+      </p>
+
+      <div class="people">
+        <div class="card person">
+          <div class="avatar">PI</div>
+          <div>
+            <b>Coordinator:  Rachid JENNANE</b>
+            <span>• Multimodal imaging • OA modeling</span>
+          </div>
+        </div>
+
+
+
+        <div class="card person">
+          <div class="avatar">PD</div>
+          <div>
+            <b>PostDoc : Marouane TLIBA</b>
+            <span>Model development • Experiments • Validation</span>
+          </div>
+        </div>
+
+        <div class="card person">
+          <div class="avatar">PhD</div>
+          <div>
+            <b>PhD : Zhe Wang</b>
+            <span>Model development • Experiments • Validation</span>
+          </div>
+        </div>
+
+        <div class="card person">
+          <div class="avatar">PhD</div>
+          <div>
+            <b>PhD : Mohamed Berrimi</b>
+            <span>Data curation • Benchmarks • Analysis Model development • Experiments • Validation</span>
+          </div>
+        </div>
+        <div class="card person">
+          <div class="avatar">PhD</div>
+          <div>
+            <b>PhD : Tinhinane Mehdi</b>
+            <span>Model development • Experiments • Validation</span>
+          </div>
+        </div>
+        <div class="card person">
+          <div class="avatar">PhD</div>
+          <div>
+            <b>PhD : Yassine Nacer</b>
+            <span>Model development • Experiments • Validation</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hr"></div>
+    </div>
+  </section>
+
+<!-- PUBLICATIONS -->
+<section id="publications" class="anchor">
+  <div class="container">
+
+    <div class="card">
+      <h4 style="margin:0 0 6px;">Publications & Outputs</h4>
+
+    </div>
+
+    <div class="card" style="margin-top:14px;">
+      <div id="pubs-root"></div>
+    </div>
+
+  </div>
+</section>
+
+
+
+  <!-- CONTACT -->
+  <section id="contact" class="anchor">
+    <div class="container">
+      <h2 class="sectionTitle">Contact</h2>
+      <p class="lead">
+        For collaboration, scientific questions, or dissemination requests, please contact the project coordination team.
+      </p>
+
+      <div class="twoCol">
+        <div class="card">
+          <h4>Email</h4>
+          <p><span class="mono">mimosa-contact@your-domain.fr</span></p>
+          <p class="small" style="color:rgba(215,225,245,.72);">
+            Replace with the official project email (or coordinator contact).
+          </p>
+
+          <div class="hr"></div>
+
+          <h4>Affiliation</h4>
+          <p class="small" style="color:rgba(215,225,245,.72);">
+            EA 4708 / MED-IMAPS / I3MTO<br/>
+            Orléans / France (update with your preferred hosting institution and address)
+          </p>
+        </div>
+
+        <div class="card">
+          <h4>Message (template)</h4>
+          <p class="small" style="color:rgba(215,225,245,.72);">
+            This local file won’t send emails by itself. It’s a template you can later connect to a service.
+          </p>
+
+          <div class="formRow">
+            <div>
+              <label for="name">Name</label>
+              <input id="name" placeholder="Your name" />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input id="email" placeholder="name@domain.com" />
+            </div>
+          </div>
+
+          <label for="msg">Message</label>
+          <textarea id="msg" placeholder="Write your message..."></textarea>
+
+          <div style="display:flex; gap:10px; align-items:center; margin-top:10px; flex-wrap:wrap;">
+            <button class="btn primary" type="button" onclick="fakeSend()">Send</button>
+            <span id="status" class="small" style="color:rgba(215,225,245,.72);"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container foot">
+    <div>
+      <div><b>MIMOSA</b> — AI for Knee Osteoarthritis</div>
+      <div class="small">
+        Funded by the French National Research Agency (ANR). Reference: <span class="mono">ANR-20-CE45-0013</span>.
+        The author of this summary is the project coordinator and is responsible for its content; ANR declines any responsibility regarding it.
+      </div>
+    </div>
+    <div>
+      <a href="#home">Back to top</a>
+      <span class="sep">•</span>
+      <a href="#" onclick="alert('Add your Legal/GDPR page or document link here.'); return false;">Legal / GDPR</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // -----------------------------
+  // 1) NAV: highlight active section
+  // -----------------------------
+  const navLinks = Array.from(document.querySelectorAll("#nav a"));
+  const sections = navLinks
+    .map(a => document.querySelector(a.getAttribute("href")))
+    .filter(Boolean);
+
+  const setActive = (id) => {
+    navLinks.forEach(a => a.classList.toggle("active", a.getAttribute("href") === "#" + id));
+  };
+
+  if ("IntersectionObserver" in window) {
+    const io = new IntersectionObserver((entries) => {
+      const visible = entries
+        .filter(e => e.isIntersecting)
+        .sort((a,b)=>b.intersectionRatio-a.intersectionRatio)[0];
+      if (visible?.target?.id) setActive(visible.target.id);
+    }, { threshold: [0.12, 0.25, 0.45, 0.65] });
+
+    sections.forEach(s => io.observe(s));
+  }
+
+  // -----------------------------
+  // 2) CONTACT: local template action
+  // -----------------------------
+  function fakeSend(){
+    const status = document.getElementById("status");
+    if(!status) return;
+    status.textContent = "Template only — connect to a backend/email service to enable sending.";
+    setTimeout(()=> status.textContent = "", 5000);
+  }
+
+  // -----------------------------
+  // 3) PUBLICATIONS: load from publications.json
+  // -----------------------------
+  function esc(s){
+    return String(s ?? "").replace(/[&<>"']/g, m => ({
+      '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'
+    }[m]));
+  }
+
+  function renderItem(it){
+    const authors = (it.authors && it.authors.length) ? esc(it.authors.join(", ")) : "";
+    const title = esc(it.title || "");
+    const venue = esc(it.venue || "");
+    const year = it.year ? `<span class="mono">${esc(it.year)}</span>` : "";
+    const doi = it.doi ? `<span class="sep">•</span><span class="mono">${esc(it.doi)}</span>` : "";
+
+    const links = (it.links || [])
+      .map(l => l?.url ? `<a href="${esc(l.url)}" target="_blank" rel="noopener noreferrer">${esc(l.label || "Link")}</a>` : "")
+      .filter(Boolean)
+      .join(`<span class="sep">•</span>`);
+
+    const linkLine = links ? `<div class="small" style="margin-top:6px;">${links}</div>` : "";
+
+    return `
+      <div class="card" style="margin-bottom:12px;">
+        <h4 style="margin:0 0 6px; font-size:15px;">
+          ${year} — ${title}
+        </h4>
+        <p style="margin:0; color:rgba(215,225,245,.74); font-size:13.5px;">
+          ${authors}${authors ? `<span class="sep">•</span>` : ""}${venue}${doi}
+        </p>
+        ${linkLine}
+      </div>
+    `;
+  }
+
+  function renderSection(sec){
+    const items = (sec.items || []).slice().sort((a,b)=>(b.year||0)-(a.year||0));
+    const body = items.map(renderItem).join("");
+    return `
+      <div style="margin-bottom:18px;">
+        <h3 style="margin:0 0 10px; font-size:16px;">${esc(sec.title || "")}</h3>
+        ${body || `<p class="small" style="color:rgba(215,225,245,.72);">No entries yet.</p>`}
+      </div>
+    `;
+  }
+
+  async function loadPublications(){
+    const root = document.getElementById("pubs-root");
+    if(!root) return;
+
+    try{
+      const res = await fetch("publications.json", { cache: "no-store" });
+      if(!res.ok) throw new Error("Cannot load publications.json (HTTP " + res.status + ")");
+      const data = await res.json();
+
+      const sections = data.sections || [];
+      root.innerHTML = sections.map(renderSection).join("");
+    }catch(err){
+      root.innerHTML = `
+        <div class="card">
+          <h4 style="margin:0 0 8px;">Publications could not be loaded</h4>
+          <p class="small" style="color:rgba(215,225,245,.72); margin:0;">
+            If you are opening this file directly (file://), the browser may block fetching JSON.
+            Run a local server: <span class="mono">python3 -m http.server 8000</span> and open
+            <span class="mono">http://localhost:8000/index3.html</span>.
+          </p>
+        </div>
+      `;
+      console.error(err);
+    }
+  }
+
+  // Ensure DOM exists before loading publications
+  window.addEventListener("DOMContentLoaded", () => {
+    loadPublications();
+  });
+</script>
+
+
+</body>
+</html>
+

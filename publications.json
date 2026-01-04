@@ -1,0 +1,275 @@
+{
+  "project": {
+    "name": "MIMOSA",
+    "reference": "ANR-20-CE45-0013"
+  },
+  "sections": [
+    {
+      "key": "patents",
+      "title": "Patent",
+      "items": [
+        {
+          "year": 2025,
+          "authors": ["R. Jennane"],
+          "title": "Filing of an invention with the National Institute of Industrial Property (INPI) for a technique for generating an output image in a modality different from the modality of the original image",
+          "venue": "INPI / WO Patent",
+          "links": [
+            {
+              "label": "Patent",
+              "url": "https://patents.google.com/patent/WO2025195820A1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "books",
+      "title": "Volumes & Book Chapters",
+      "items": [
+        {
+          "year": 2025,
+          "authors": ["R. Jennane"],
+          "title": "Fractal Analysis. Application to Biomedical Imaging",
+          "venue": "Chapter in Mathematical and Computational Modelling, Approximation and Simulation, SEMA, SIMAI, Springer Series 41",
+          "links": []
+        }
+      ]
+    },
+    {
+      "key": "journals",
+      "title": "Journal Papers",
+      "items": [
+        {
+          "year": 2025,
+          "authors": ["Z. Wang", "Y. Ru", "A. Chetouani", "W. E. Palmer", "F. Bauer", "F. Chen", "L. Zhang", "D. Hans", "R. Jennane", "M. Jarraya", "Y. H. Chen"],
+          "title": "From Physics-Informed Guidance to Progressive Distillation: A Dual-Stage Diffusion Framework for Brain MRI Super-Resolution",
+          "venue": "Knowledge-Based Systems",
+          "doi": "10.1016/j.knosys.2025.114987",
+          "links": [
+            { "label": "DOI", "url": "https://doi.org/10.1016/j.knosys.2025.114987" }
+          ]
+        },
+        {
+          "year": 2025,
+          "authors": ["M. Berrimi", "R. Jennane"],
+          "title": "MVMI: Multi-View Multi-Instance network for the detection of knee osteoarthritis",
+          "venue": "Biomedical Signal Processing and Control (Elsevier)",
+          "doi": "10.1016/j.bspc.2025.108794",
+          "links": [
+            { "label": "DOI", "url": "https://doi.org/10.1016/j.bspc.2025.108794" }
+          ]
+        },
+        {
+          "year": 2025,
+          "authors": ["Z. Wang", "Y. H. Chen", "A. Chetouani", "F. Bauer", "Y. Ru", "F. Chen", "L. Zhang", "R. Jennane", "M. Jarraya"],
+          "title": "Feasibility Study of a Diffusion-Based Model for Cross-Modal Generation of Knee MRI from X-ray: Integrating External Radiographic Feature Information",
+          "venue": "IEEE Journal of Biomedical and Health Informatics (IEEE-JBHI)",
+          "doi": "10.1109/JBHI.2025.3593487",
+          "links": []
+        },
+        {
+          "year": 2025,
+          "authors": ["Z. Wang", "A. Chetouani", "Y. H. Chen", "Y. Ru", "F. Chen", "M. Jarraya", "F. Bauer", "L. Zhang", "D. Hans", "R. Jennane"],
+          "title": "Confidence-Driven Deep Learning Framework for Early Detection of Knee Osteoarthritis",
+          "venue": "IEEE Transactions on Biomedical Engineering (IEEE-TBME)",
+          "doi": "10.1109/TBME.2025.3587003",
+          "links": []
+        },
+        {
+          "year": 2025,
+          "authors": ["R. Sefti", "D. Sbibih", "R. Jennane"],
+          "title": "An automatic B-snake model based on deep learning for medical image segmentation",
+          "venue": "Expert Systems with Applications (Elsevier)",
+          "doi": "10.1016/j.eswa.2025.126481",
+          "links": [
+            { "label": "DOI", "url": "https://doi.org/10.1016/j.eswa.2025.126481" }
+          ]
+        },
+        {
+          "year": 2024,
+          "authors": ["T. Mehdi", "Y. Nasser", "S. Aloui", "R. Jennane"],
+          "title": "Deep learning based approach combining shape and texture features for knee osteoarthritis prediction from X-ray images",
+          "venue": "Biomedical Signal Processing and Control (Elsevier)",
+          "doi": "10.1016/j.bspc.2024.107172",
+          "links": [
+            { "label": "DOI", "url": "https://doi.org/10.1016/j.bspc.2024.107172" }
+          ]
+        },
+        {
+          "year": 2024,
+          "authors": ["Z. Wang", "A. Chetouani", "M. Jarraya", "D. Hans", "R. Jennane"],
+          "title": "Transformer with Selective Shuffled Position Embedding and Key-Patch Exchange Strategy for Early Detection of Knee Osteoarthritis",
+          "venue": "Expert Systems with Applications (Elsevier)",
+          "doi": "10.1016/j.eswa.2024.124614",
+          "links": [
+            { "label": "DOI", "url": "https://doi.org/10.1016/j.eswa.2024.124614" }
+          ]
+        },
+        {
+          "year": 2024,
+          "authors": ["R. Sefti", "D. Sbibih", "R. Jennane"],
+          "title": "A CNN-Based Spline Active Surface Method with an After-Balancing Step for 3D Medical Image Segmentation",
+          "venue": "Mathematics and Computers in Simulation (Elsevier)",
+          "doi": "10.1016/j.matcom.2024.06.002",
+          "links": [
+            { "label": "DOI", "url": "https://doi.org/10.1016/j.matcom.2024.06.002" }
+          ]
+        },
+        {
+          "year": 2024,
+          "authors": ["M. Berrimi", "D. Hans", "R. Jennane"],
+          "title": "A semi-supervised multiview-MRI network for the detection of Knee Osteoarthritis",
+          "venue": "Computerized Medical Imaging and Graphics (Elsevier)",
+          "doi": "10.1016/j.compmedimag.2024.102371",
+          "links": [
+            { "label": "DOI", "url": "https://doi.org/10.1016/j.compmedimag.2024.102371" }
+          ]
+        },
+        {
+          "year": 2023,
+          "authors": ["Y. Nasser", "M. El Hassouni", "R. Jennane"],
+          "title": "A Discriminative Shape-Texture Convolutional Neural Network for Early Diagnosis of Knee OsteoArthritis from X-ray images",
+          "venue": "Physical and Engineering Sciences in Medicine (Springer)",
+          "doi": "10.1007/s13246-023-01256-1",
+          "links": [
+            { "label": "DOI", "url": "https://doi.org/10.1007/s13246-023-01256-1" }
+          ]
+        },
+        {
+          "year": 2023,
+          "authors": ["Z. Wang", "A. Chetouani", "R. Jennane"],
+          "title": "A Confident Labelling Strategy Based on Deep Learning for Improving Early Detection of Knee Osteoarthritis",
+          "venue": "arXiv",
+          "doi": "10.48550/arXiv.2304.08364",
+          "links": [
+            { "label": "arXiv", "url": "https://doi.org/10.48550/arXiv.2304.08364" }
+          ]
+        },
+        {
+          "year": 2023,
+          "authors": ["Z. Wang", "A. Chetouani", "R. Jennane"],
+          "title": "Key-Exchange Convolutional Auto-Encoder for data augmentation in early knee osteoarthritis classification",
+          "venue": "arXiv",
+          "doi": "10.48550/arXiv.2302.13336",
+          "links": [
+            { "label": "arXiv", "url": "https://doi.org/10.48550/arXiv.2302.13336" }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "conferences",
+      "title": "Conference Papers",
+      "items": [
+        {
+          "year": 2025,
+          "authors": ["M. Tliba", "Y. Nasser", "M. A. Kerkouri", "A. Chetouani", "R. Jennane"],
+          "title": "Multi-purpose Domain Adaptive Network for Unsupervised SAR Colorization",
+          "venue": "33rd EUSIPCO, Palermo (Italy)",
+          "links": []
+        },
+        {
+          "year": 2024,
+          "authors": ["Y. Nasser", "M. El Hassouni", "A. Chetouani", "R. Jennane"],
+          "title": "SWE-Net: Sliced-Wasserstein EfficientNet for Learning Discriminative Texture Features in Early Diagnosis of Knee Osteoarthritis",
+          "venue": "14th IEEE-IPTA, Rabat (Morocco)",
+          "links": []
+        },
+        {
+          "year": 2024,
+          "authors": ["M. Berrimi", "Y. X. Teoh", "A. Chetouani", "L. Houam", "K. W. Lai", "R. Jennane"],
+          "title": "A Multi-Instance Learning Approach for Improving Knee Osteoarthritis Diagnosis from MRI Data",
+          "venue": "21st International Conference on Content-Based Multimedia Indexing (CBMI), Reykjavik (Iceland)",
+          "links": []
+        },
+        {
+          "year": 2024,
+          "authors": ["A. Sekhri", "M. Tliba", "M. Kerkouri", "Y. Nasser", "A. Chetouani", "A. Bruno", "R. Jennane"],
+          "title": "Shifting Focus: From Global Semantics to Local Prominent Features in Swin-Transformer for Knee Osteoarthritis Severity Assessment",
+          "venue": "32nd EUSIPCO, Lyon (France)",
+          "links": []
+        },
+        {
+          "year": 2023,
+          "authors": ["T. Mehdi", "Y. Nasser", "A. Almhdie", "S. Aloui", "R. Jennane"],
+          "title": "Effects of Region of Interest Location on Osteoarthritis Detection Using Deep Feature Learning",
+          "venue": "13th IEEE-IPTA, Paris (France)",
+          "links": []
+        },
+        {
+          "year": 2023,
+          "authors": ["A. Sekhri", "Y. Nasser", "M. Tliba", "M. A. Kerkouri", "A. Chetouani", "A. Bruno", "A. Roumane", "R. Jennane"],
+          "title": "Diagnostic automatique de la sévérité de la gonarthrose à l’aide de transformeur Swin",
+          "venue": "29ème GRETSI, Grenoble (France)",
+          "links": []
+        },
+        {
+          "year": 2023,
+          "authors": ["Z. Wang", "A. Chetouani", "R. Jennane"],
+          "title": "Transformer with Selective Shuffled Position Embedding for Early Detection of Knee Osteoarthritis",
+          "venue": "20th CBMI, Orléans (France)",
+          "links": []
+        },
+        {
+          "year": 2023,
+          "authors": ["A. Sekhri", "M. Tliba", "M. A. Kerkouri", "Y. Nasser", "A. Chetouani", "A. Bruno", "R. Jennane"],
+          "title": "Automatic Diagnosis of Knee Osteoarthritis Severity Using Swin transformer",
+          "venue": "20th CBMI, Orléans (France)",
+          "links": []
+        },
+        {
+          "year": 2023,
+          "authors": ["M. Berrimi", "M. Oussalah", "R. Jennane"],
+          "title": "A 3D Deep Learning Approach for Meniscus Tear Severity at the Region-level",
+          "venue": "13th IEEE-IPTA, Paris (France)",
+          "links": []
+        },
+        {
+          "year": 2023,
+          "authors": ["R. Sefti", "D. Sbibih", "R. Jennane"],
+          "title": "Automated 3D Snake Method Based on Deep Learning for Medical Image Segmentation with a New After-Balancing Step",
+          "venue": "MACMAS, Torino (Italy)",
+          "links": []
+        },
+        {
+          "year": 2023,
+          "authors": ["T. Bouyahmed", "Y. Nasser", "A. Almhdie", "S. Aloui", "R. Jennane"],
+          "title": "Effects of Region of Interest Location on Osteoarthritis Detection Using Deep Learning",
+          "venue": "13th IEEE-IPTA, Paris (France)",
+          "links": []
+        },
+        {
+          "year": 2023,
+          "authors": ["Z. Wang", "A. Chetouani", "R. Jennane"],
+          "title": "A Siamese-Based Network for the Detection of Osteopenia in Paediatric Digital X-Rays of the Wrist",
+          "venue": "20th IEEE-ISBI Conference, Cartagena de Indias (Colombia)",
+          "links": []
+        },
+        {
+          "year": 2022,
+          "authors": ["Y. Nasser", "M. El Hassouni", "R. Jennane"],
+          "title": "Discriminative Deep Neural Network for Predicting Knee OsteoArthritis in Early Stage",
+          "venue": "MICCAI-PRIME 2022, LNCS 13564 (pp. 126–136), Springer",
+          "doi": "10.1007/978-3-031-16919-9_12",
+          "links": [
+            { "label": "DOI", "url": "https://doi.org/10.1007/978-3-031-16919-9_12" }
+          ]
+        },
+        {
+          "year": 2022,
+          "authors": ["R. Sefti", "D. Sbibih", "R. Jennane"],
+          "title": "Cubic Composite Spline Approximation Methods on the Sphere",
+          "venue": "3rd International Symposium on New Trends in Approximation and Applications, Springer Nature, Oujda (Morocco)",
+          "links": []
+        },
+        {
+          "year": 2022,
+          "authors": ["R. Sefti", "D. Sbibih", "R. Jennane"],
+          "title": "A Deep Network Based Multi Splines Approximation Method",
+          "venue": "10th International Conference on Curves and Surfaces, SMAI-SIGMA, Arcachon (France)",
+          "links": []
+        }
+      ]
+    }
+  ]
+}
