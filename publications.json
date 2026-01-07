@@ -51,6 +51,16 @@
         },
         {
           "year": 2025,
+          "authors": ["Z. Wang", "Y. Ru", "A. Chetouani", "W. E. Palmer", "F. Bauer", "F. Chen", "L. Zhang", "D. Hans", "R. Jennane", "M. Jarraya", "Y. H. Chen"],
+          "title": "From Physics-Informed Guidance to Progressive Distillation: A Dual-Stage Diffusion Framework for Brain MRI Super-Resolution",
+          "venue": "Knowledge-Based Systems",
+          "doi": "10.1016/j.knosys.2025.114987",
+          "links": [
+            { "label": "DOI", "url": "https://doi.org/10.1016/j.knosys.2025.114987" }
+          ]
+        },
+        {
+          "year": 2025,
           "authors": ["M. Berrimi", "R. Jennane"],
           "title": "MVMI: Multi-View Multi-Instance network for the detection of knee osteoarthritis",
           "venue": "Biomedical Signal Processing and Control (Elsevier)",
